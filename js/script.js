@@ -1,7 +1,7 @@
 jQuery(document).ready(function(){
 	/*글자쓰는 플러그인*/
 	$('.ptitle').typed({
-		strings:["뭐라고 쓸지 고민 쓰지말까요"],
+		strings:["I am Creative WEB PUBLISHER. <br/> YANG HYUN HWA."],
 		typeSpeed:150, //타이핑되는 시간
 		backDelay:200, //재실행시 대기시간
 		loop:true //연속재생
