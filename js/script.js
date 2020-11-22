@@ -101,7 +101,7 @@ jQuery(document).ready(function(){
 				var img=$(this).find('img');
 				var imgh=img.innerHeight();
 				
-				img.stop().animate({top:ah-imgh},7000);
+				img.stop().animate({top:ah-imgh},10000);
 		},function(){
 				var img=$(this).find('img');
 				img.stop().animate({top:0},6000)
