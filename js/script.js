@@ -1,10 +1,11 @@
 jQuery(document).ready(function(){
 	/*글자쓰는 플러그인*/
 	$('.ptitle').typed({
-		strings:["I am Creative WEB PUBLISHER. <br/> YANG HYUN HWA."],
+		strings:['<span class="txt1">I am Creative WEB PUBLISHER.</span>','<span class="txt2">YANG HYUN HWA.</span>'],
 		typeSpeed:150, //타이핑되는 시간
 		backDelay:200, //재실행시 대기시간
-		loop:true //연속재생
+		loop:true, //연속재생
+		
 	})
 	/*프로파일 롤링 1*/
 	var work=$('.work>li'); //.work1,.work2,.work3 size0,size1,size2
