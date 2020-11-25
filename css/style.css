@@ -12,9 +12,10 @@ body::-webkit-scrollbar-thumb:hover{background-color:#660;}
 
 /*레이아웃*/
 #header{width:100%; height:100px; border-bottom:3px solid #202F5A; position:fixed; background:#fff; z-index:99;}
-#main{height:950px; position:relative; top:100px;
-overflow:hidden;}
-#profile{height:955px; position:relative; margin-top:200px; background:#202F5A; color:#fff;}
+#main{height:540px; position:relative; top:100px;
+overflow:hidden; background:#FF914D;}
+#profile{height:955px; position:relative; margin-top:100px; background:#F2F8FA; color:#333; padding-top:150px;}
+
 #webstd{height:1000px; position:relative; padding-top:150px;}
 #jquery{height:1000px; position:relative; padding-top:150px;}
 #response{height:1000px; position:relative; padding-top:150px;}
@@ -41,19 +42,11 @@ overflow:hidden;}
 .fav{position:absolute; top:70px; right:20px; display:block; padding:0 4px; font-weight:bold; background-color:#fff; color:#26376f;}
 
 /*메인*/
-#main .container{background:url(../images/mainImg.png) no-repeat right center; line-height:1420px;}
-
-/*프로파일*/
-#profile .container .title{
-	padding-top:50px;
+#main .container{
+	background: url(../images/mymain_bg.png) no-repeat bottom center;
+    background-size: contain;
 }
-#profile_wrap{
-	width:860px;
-	height:955px;
-	margin:0 auto;
-	padding-top:280px;
-}
-#profile_wrap .textW{
+#main .textW{
 	width:500px; 
 	font-size:28px; 
 	line-height:40px; 
@@ -64,12 +57,28 @@ overflow:hidden;}
 }
 .typed-cursor{
 	
-	color:#FF914D;
+	color:#202F5A;
 	margin-left:2px;
 }
-#profile_wrap div.ptitle{
+#main .ptitle{
+	color:#fff;
+	font-weight:bold;
+	font-size:32px;
 	
 }
+
+/*프로파일*/
+
+#profile .container .title{
+	padding-top:50px;
+}
+#profile_wrap{
+	width:860px;
+	height:955px;
+	margin:0 auto;
+	padding-top:280px;
+}
+
 
 .profile_about{
 	width:728px;
@@ -87,8 +96,8 @@ overflow:hidden;}
 	margin-right:58px;
 }
 .profile_about .profile_img img{
-	width:165px;
-	height:165px;
+	width:178px;
+	height:178px;
 	border-radius:50%;
 	
 }
@@ -100,7 +109,7 @@ overflow:hidden;}
 	margin-bottom:3px;
 }
 .profile_about .profile_info ul li a{
-	color:#fff;
+	color:#333;
 	text-decoration:underline;
 }
 .profile_about .profile_info ul li i{
@@ -199,7 +208,7 @@ overflow:hidden;}
 }
 
 .skill .progress-bar p {
-    background-color: #2b3750;
+    background-color: #202F5A;
     margin-top: -26px;
     margin-left: -48px;
     padding: 0 5px;
@@ -210,7 +219,9 @@ overflow:hidden;}
     font-weight: 400;
     line-height: 1.3;
 }
-
+.skill .progress-bar p.mgshort{
+	margin-left:-54px;
+}
 .skill .progress-bar > p:before,
 .skill .progress-bar > p:after {
     border: medium solid transparent;
